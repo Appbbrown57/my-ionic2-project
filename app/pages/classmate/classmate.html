@@ -1,0 +1,28 @@
+<span class="classmate">
+  <ion-header>
+    <ion-navbar>
+      <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>{{classmate.name}}</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+  <ion-content>
+    <div class="favorite-color" [style.backgroundColor]="classmate.favoriteColor"></div>
+    <div class="padded-content">
+      <div class="row">
+        <div class="col">
+          Date of Birth
+        </div>
+        <div class="col">
+          {{classmate.dateOfBirth | date}}
+        </div>
+      </div>
+    </div>
+  </ion-content>
+
+  <ion-footer>
+    <button primary menuToggle>Toggle Menu</button>
+  </ion-footer>
+</span>

@@ -9,8 +9,8 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let mate of mates">
+    <button ion-item *ngFor="let mate of mates" (click)="classmateTapped($event, mate)">
       {{mate.name}}
-    </ion-item>
+    </button>
   </ion-list>
 </ion-content>
